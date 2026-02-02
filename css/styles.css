@@ -98,55 +98,129 @@ select:-webkit-autofill:focus {
 
 .intro-page {
 	display: flex;
+	gap: 12px;
 }
 
 .hero {
-  --text-color: #fff;
+	--text-color: #fff;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	max-width: 570px;
 	border-radius: 20px;
-  color: var(--text-color);
-  overflow: hidden;
+	color: var(--text-color);
+	overflow: hidden;
 }
 .hero__main {
 	flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 55px 60px;
-  background-color: #222;
-  background-image: url('../images/hero-bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding: 55px 60px;
+	background-color: #222;
+	background-image: url("../images/hero-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 .hero__badge {
-  font-size: 14px;
-  font-weight: 500;
-  border: 1px solid var(--text-color);
-  border-radius: 41px;
-  padding: 5px 15px;
-  opacity: 0.8;
-  margin-bottom: 60px;
+	font-size: 14px;
+	font-weight: 500;
+	border: 1px solid var(--text-color);
+	border-radius: 41px;
+	padding: 5px 15px;
+	opacity: 0.8;
+	margin-bottom: 60px;
 }
 .hero__heading {
-  font-size: 36px;
-  line-height: 46px;
-  margin-top: 0;
-  margin-bottom: 25px;
+	font-size: 36px;
+	line-height: 46px;
+	margin-top: 0;
+	margin-bottom: 25px;
 }
 .hero__text {
-  margin: 0;
-  font-size: 16px;
-  line-height: 26px;
+	margin: 0;
+	font-size: 16px;
+	line-height: 26px;
 }
 .hero__bottom {
-  padding: 28px;
-  background-color: var(--green-color);
+	padding: 28px;
+	background-color: var(--green-color);
+	text-align: center;
+	font-size: 19px;
+}
+
+/* Signup-form */
+
+.signup-form {
+	overflow: hidden;
+	border-radius: 20px;
+	background-color: #fff;
+	width: 100%;
+	max-width: 570px;
+	padding: 55px 60px 40px;
+}
+.signup-form__heading {
+	margin-top: 0;
+  margin-bottom: 65px;
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: 600;
+}
+.signup-form__fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+.signup-form__field {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border: none;
+  border-bottom: 1px solid #555;
+  color: #555;
+  font-size: 16px;
+  outline: none;
+}
+
+.signup-form__field:focus {
+  color: #000;
+  border-color: #000;
+  font-weight: 600;
+}
+
+.signup-form__field:not(:last-child) {
+  margin-bottom: 20px;
+}
+.signup-form__submit {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 20px;
+  background-color: var(--blue-color);
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.signup-form__submit:hover {
+  opacity: 0.8;
+}
+
+.signup-form__submit:active {
+  opacity: 0.6;
+}
+.signup-form__notice {
+  color: #555;
+  font-size: 11px;
+  line-height: 15px;
   text-align: center;
-  font-size: 19px;
+
+}
+.signup-form__notice-link {
+  color: var(--red-color);
+  font-weight: 500;
 }
 
 /* RETINA BACKGROUNDS */
