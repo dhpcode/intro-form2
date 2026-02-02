@@ -11,6 +11,7 @@
 	--text-color: #000;
 }
 
+
 html {
 	box-sizing: border-box;
 	height: 100%;
@@ -90,6 +91,8 @@ select:-webkit-autofill:focus {
 /* MAIN CONTENT */
 .main-content {
 	flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /* RETINA BACKGROUNDS */
