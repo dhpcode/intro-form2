@@ -11,7 +11,6 @@
 	--text-color: #000;
 }
 
-
 html {
 	box-sizing: border-box;
 	height: 100%;
@@ -33,7 +32,7 @@ body {
 	font-family: "Inter", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	background-color: #fff;
+	background-color: var(--body-color);
 	color: var(--text-color);
 }
 
@@ -91,8 +90,63 @@ select:-webkit-autofill:focus {
 /* MAIN CONTENT */
 .main-content {
 	flex-grow: 1;
-  padding-top: 80px;
-  padding-bottom: 80px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+/* Hero */
+
+.intro-page {
+	display: flex;
+}
+
+.hero {
+  --text-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 570px;
+	border-radius: 20px;
+  color: var(--text-color);
+  overflow: hidden;
+}
+.hero__main {
+	flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 55px 60px;
+  background-color: #222;
+  background-image: url('../images/hero-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__badge {
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--text-color);
+  border-radius: 41px;
+  padding: 5px 15px;
+  opacity: 0.8;
+  margin-bottom: 60px;
+}
+.hero__heading {
+  font-size: 36px;
+  line-height: 46px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.hero__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+.hero__bottom {
+  padding: 28px;
+  background-color: var(--green-color);
+  text-align: center;
+  font-size: 19px;
 }
 
 /* RETINA BACKGROUNDS */
